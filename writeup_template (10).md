@@ -5,13 +5,15 @@
 ### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
 
 ---
-[//]: # (Image References)
+
 **Behavioral Cloning Project**
+[//]: # (Image References)
+
 [image1]: ./examples/center_2016_12_01_13_30_48_404.jpg "CenterImage"
 [image2]: ./examples/right_2016_12_01_13_30_48_404.jpg "RightImage"
 [image3]: ./examples/left_2016_12_01_13_30_48_404.jpg "LeftImage"
-
 ---
+
 The goals / steps of this project are the following:
 * Use the simulator to collect data of good driving behavior
 * Build, a convolution neural network in Keras that predicts steering angles from images
@@ -52,7 +54,7 @@ My consists of 5 Convolutional layers and 4 fully connected layers
 The data has been normalizedin in the model using Keras Lamda layer(model.py line 72)
 
 Then my model consists of a convolution neural network with 5x5 and 3x3 filter sizes with drop-outs and fully connected layers(model.py lines 73-85).
-The model is basically an implementation of NVIDIA's model given in their [research paper](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf)
+The model is basically an implementation of NVIDIA's model given in their [research paper](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf).
 
 The model includes RELU layers to introduce nonlinearity with Exponential Linear Unit(code line 71-85)
 
@@ -60,7 +62,7 @@ The model includes RELU layers to introduce nonlinearity with Exponential Linear
 
 The model contains dropout layers in order to reduce overfitting (model.py lines 79). 
 
-The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+The model was trained and validated on the the dataset provided by Udacity. The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
 #### 3. Model parameter tuning
 
@@ -127,7 +129,7 @@ Left</br>
 
 After this training, the car was driving down the road all the time on the [first track](run1.mp4)
 
-##Final output
+### Final output
 
 [Output video](run1.mp4)
 
